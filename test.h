@@ -3,10 +3,10 @@
 #include"Movie.h"
 #include "personen.h"
 
-void test_copy();
-void test_movie();
-void test_movie2();
-void test_sort();
+void test_1();
+void test_2();
+void test_3();
+void test_4();
 hfu::Person* createArr();
 
 

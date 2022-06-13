@@ -182,6 +182,11 @@ CMakeFiles/Code.dir/Movie.cpp.o: Movie.cpp \
   /usr/include/c++/12/bits/ostream.tcc \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/vector \
+  /usr/include/c++/12/bits/stl_uninitialized.h \
+  /usr/include/c++/12/bits/stl_vector.h \
+  /usr/include/c++/12/bits/stl_bvector.h \
+  /usr/include/c++/12/bits/vector.tcc \
   personen.h
 
 CMakeFiles/Code.dir/main.cpp.o: main.cpp \
@@ -366,6 +371,11 @@ CMakeFiles/Code.dir/main.cpp.o: main.cpp \
   /usr/include/c++/12/bits/ostream.tcc \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/vector \
+  /usr/include/c++/12/bits/stl_uninitialized.h \
+  /usr/include/c++/12/bits/stl_vector.h \
+  /usr/include/c++/12/bits/stl_bvector.h \
+  /usr/include/c++/12/bits/vector.tcc \
   personen.h \
   Wordsequence.h
 
@@ -733,12 +743,17 @@ CMakeFiles/Code.dir/test.cpp.o: test.cpp \
   /usr/include/c++/12/bits/ostream.tcc \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/vector \
+  /usr/include/c++/12/bits/stl_uninitialized.h \
+  /usr/include/c++/12/bits/stl_vector.h \
+  /usr/include/c++/12/bits/stl_bvector.h \
+  /usr/include/c++/12/bits/vector.tcc \
   personen.h \
+  Wordsequence.h \
   /usr/include/c++/12/cassert \
   /usr/include/assert.h \
   /usr/include/c++/12/iterator \
-  /usr/include/c++/12/bits/stream_iterator.h \
-  Wordsequence.h
+  /usr/include/c++/12/bits/stream_iterator.h
 
 
 /usr/include/c++/12/bits/stream_iterator.h:
@@ -750,6 +765,12 @@ CMakeFiles/Code.dir/test.cpp.o: test.cpp \
 /usr/include/c++/12/cassert:
 
 test.h:
+
+/usr/include/c++/12/bits/stl_bvector.h:
+
+/usr/include/c++/12/bits/stl_vector.h:
+
+/usr/include/c++/12/bits/stl_uninitialized.h:
 
 /usr/include/c++/12/bits/basic_ios.tcc:
 
@@ -824,6 +845,8 @@ personen.cpp:
 /usr/include/c++/12/bits/localefwd.h:
 
 /usr/include/bits/stdint-uintn.h:
+
+/usr/include/c++/12/vector:
 
 /usr/include/c++/12/bits/streambuf_iterator.h:
 
@@ -1108,6 +1131,8 @@ Wordsequence.h:
 /usr/include/c++/12/cerrno:
 
 /usr/include/c++/12/bits/refwrap.h:
+
+/usr/include/c++/12/bits/vector.tcc:
 
 /usr/include/c++/12/bits/predefined_ops.h:
 

@@ -1,7 +1,9 @@
 #ifndef _MOVIE_H_
 #define _MOVIE_H_
 #include<iostream>
+#include <vector>
 #include"personen.h"
+#include"vector"
 
 namespace cinema{
     class Movie{
@@ -12,13 +14,14 @@ namespace cinema{
         int Duration;
         int length;
         hfu::Person director;
-        int *scores;
+        std::vector<int> scores;
 
 
 
     public:
         Movie(const std::string& Title, const int& Duration, const hfu::Person& director,const int *scores, const int length);
         Movie(const std::string& Title,const std::string& Regissuer,const int& Duration);
+        Movie(const std::string& Title, const int Duration, const hfu::Person& director);
         Movie(const Movie& copy);
 
         std::string getTitle();
@@ -27,12 +30,15 @@ namespace cinema{
         int getDuration();
         int getScore(int input);
         int getScoreCount();
+        hfu::Person getDirector();
+
 
         void setScore(int index, int score);
-        int* createArr(const int *scores, const int &arrSize);
+        std::vector<int> createArr(const int *scores, const int &arrSize);
 
-        ~Movie();
 
+        bool operator == (const Movie& input);
+        bool operator != (const Movie& input);
     };
 };
 

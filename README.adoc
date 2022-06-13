@@ -1,5 +1,14 @@
 = README
 
-== TO-DO
+== Texte und Notizen
+
+
+* Aufgabe 1b
+** Der Test Test_7() ist dazu da um die Nullregel zu testen und ob der Programmierer weiß wie man Arrays durch Vectoren ersetzt
+
+<<<
+
+*TO-DO*
 
 * +++<s>Aufgabe lesen</s>+++
+
