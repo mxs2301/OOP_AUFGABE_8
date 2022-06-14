@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/max/Documents/Git/OOP-Aufgabe 8/main.cpp" "CMakeFiles/Code.dir/main.cpp.o" "gcc" "CMakeFiles/Code.dir/main.cpp.o.d"
   "/home/max/Documents/Git/OOP-Aufgabe 8/personen.cpp" "CMakeFiles/Code.dir/personen.cpp.o" "gcc" "CMakeFiles/Code.dir/personen.cpp.o.d"
   "/home/max/Documents/Git/OOP-Aufgabe 8/test.cpp" "CMakeFiles/Code.dir/test.cpp.o" "gcc" "CMakeFiles/Code.dir/test.cpp.o.d"
+  "/home/max/Documents/Git/OOP-Aufgabe 8/zahlen.cpp" "CMakeFiles/Code.dir/zahlen.cpp.o" "gcc" "CMakeFiles/Code.dir/zahlen.cpp.o.d"
   )
 
 # Targets to which this target links.

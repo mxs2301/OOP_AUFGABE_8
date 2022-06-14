@@ -4,7 +4,8 @@
 
 cinema::Movie::Movie(const std::string &Title, const std::string &Regissuer,
                      const int &Duration)
-    : Title(Title), Regissuer(Regissuer), Duration(Duration) {}
+    : Title(Title), Regissuer(Regissuer), Duration(Duration), scores(),
+      length(0) {}
 
 cinema::Movie::Movie(const std::string &Title, const int &Duration,
                      const hfu::Person &director, const int *scores,
@@ -26,7 +27,7 @@ std::vector<int> cinema::Movie::createArr(const int *scores,
   std::vector<int> vec;
 
   for (int i = 0; i < arrSize; i++) {
-    vec.push_back(scores[i]);
+    this->scores.push_back(scores[i]);
   }
   return vec;
 }
@@ -38,17 +39,16 @@ std::string cinema::Movie::getRegissuer() { return Regissuer; }
 int cinema::Movie::getDuration() { return Duration; }
 
 int cinema::Movie::getScore(int input) { 
+    
+    return this->scores.at(input);
 
-    return scores[input];
-
-}
+ }
 
 int cinema::Movie::getScoreCount() { return length; }
 
 void cinema::Movie::setScore(int index, int score) {
-    
-    this->scores[index] = score;
 
+  this->scores[index] = score;
 }
 
 hfu::Person cinema::Movie::getDirector() { return director; }
@@ -62,9 +62,11 @@ bool cinema::Movie::operator==(const Movie &input) {
     return false;
 }
 
-bool cinema::Movie::operator!=(const Movie& input){
-    if(Title != input.Title || Regissuer != input.Regissuer || Duration != input.Duration || length != input.length || scores != input.scores)
-        return true;
-    else
-        return false;
+bool cinema::Movie::operator!=(const Movie &input) {
+  if (Title != input.Title || Regissuer != input.Regissuer ||
+      Duration != input.Duration || length != input.length ||
+      scores != input.scores)
+    return true;
+  else
+    return false;
 }

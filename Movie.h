@@ -12,9 +12,9 @@ namespace cinema{
         std::string Title;
         std::string Regissuer;
         int Duration;
-        int length;
+        int length = scores.size();
         hfu::Person director;
-        std::vector<int> scores;
+        
 
 
 
@@ -39,6 +39,8 @@ namespace cinema{
 
         bool operator == (const Movie& input);
         bool operator != (const Movie& input);
+
+        std::vector<int> scores;
     };
 };
 

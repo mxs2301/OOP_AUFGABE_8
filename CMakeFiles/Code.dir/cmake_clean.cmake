@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Code.dir/personen.cpp.o.d"
   "CMakeFiles/Code.dir/test.cpp.o"
   "CMakeFiles/Code.dir/test.cpp.o.d"
+  "CMakeFiles/Code.dir/zahlen.cpp.o"
+  "CMakeFiles/Code.dir/zahlen.cpp.o.d"
   "Code"
   "Code.pdb"
 )

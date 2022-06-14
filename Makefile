@@ -225,6 +225,30 @@ test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Code.dir/build.make CMakeFiles/Code.dir/test.cpp.s
 .PHONY : test.cpp.s
 
+zahlen.o: zahlen.cpp.o
+.PHONY : zahlen.o
+
+# target to build an object file
+zahlen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Code.dir/build.make CMakeFiles/Code.dir/zahlen.cpp.o
+.PHONY : zahlen.cpp.o
+
+zahlen.i: zahlen.cpp.i
+.PHONY : zahlen.i
+
+# target to preprocess a source file
+zahlen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Code.dir/build.make CMakeFiles/Code.dir/zahlen.cpp.i
+.PHONY : zahlen.cpp.i
+
+zahlen.s: zahlen.cpp.s
+.PHONY : zahlen.s
+
+# target to generate assembly for a file
+zahlen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Code.dir/build.make CMakeFiles/Code.dir/zahlen.cpp.s
+.PHONY : zahlen.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -246,6 +270,9 @@ help:
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"
+	@echo "... zahlen.o"
+	@echo "... zahlen.i"
+	@echo "... zahlen.s"
 .PHONY : help
 
 

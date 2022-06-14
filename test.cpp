@@ -2,11 +2,14 @@
 #include "Movie.h"
 #include "Wordsequence.h"
 #include "personen.h"
+#include "zahlen.h"
 #include <cassert>
 #include <cstdio>
 #include <iostream>
 #include <iterator>
 #include <string>
+
+
 
 void test_1() {
   std::string Firstname = "Max";
@@ -117,16 +120,27 @@ void test_7(){
 void test_8(){
     hfu::Person director("Max", "Schopf");
     int arr[] = {2, 3, 0, 1};
-    cinema::Movie obj("Der Informatiker", 180, director);
+    cinema::Movie obj("Der Informatiker", 180, director,arr, 4);
 
     auto copy = cinema::Movie(obj);
-
-    copy.setScore(0, 1);
+    assert(copy == obj);
+    
+    copy.setScore(2, 1);
 
     assert(copy != obj);
-    
 }
 
+
+void test_9(){
+    std::vector<int> nums = {2,7, 11, 15};
+    int n = 9;
+
+    std::vector<int> test = sum(nums, n);
+
+    print(sumMap(nums, n));
+
+    print(test);
+}
 
 void runing() {
 
@@ -138,4 +152,5 @@ void runing() {
   test_6();
   test_7();
   test_8();
+  test_9();
 }
