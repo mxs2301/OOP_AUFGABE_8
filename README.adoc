@@ -11,4 +11,7 @@
 *TO-DO*
 
 * +++<s>Aufgabe lesen</s>+++
+* Map documentation lesen
+* Erledigen der Aufgabe 2 a
+* Revision der Lösung für 2 b
 
