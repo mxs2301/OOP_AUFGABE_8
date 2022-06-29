@@ -54,12 +54,7 @@ void cinema::Movie::setScore(int index, int score) {
 hfu::Person cinema::Movie::getDirector() { return director; }
 
 bool cinema::Movie::operator==(const Movie &input) {
-  if (Title == input.Title && Regissuer == input.Regissuer &&
-      Duration == input.Duration && length == input.length &&
-      scores == input.scores)
-    return true;
-  else
-    return false;
+    return !(*this != input);
 }
 
 bool cinema::Movie::operator!=(const Movie &input) {
